@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | KaKao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:53</span>
@@ -36,25 +36,45 @@
       <span class="header__icon"> <i class="fas fa-bars"></i></span>
     </div>
   </header>
-  <main class="chat">
-    <ul calss="chat__messages">
+  <main class="chat-screen">
+    <ul class="chat__messages">
       <span class="chat__timeStamp">Friday, January 11, 2019</span>
       <li class="incoming-message message">
-        <img class="g-avatar message__avatar" src="images/avatar.jpg" />
+        <img class="m-avatar message__avatar" src="images/avatar.jpg" />
         <div class="message__content">
           <span class="message__author">Tina</span>
-          <div class="message__bubble">
-            I love you!
-          </div>
+          <span class="message__bubble">
+            I love you !
+          </span>
+          <!--           텍스트는 span에 들어가야한다 div에 들어가서 box-shadow가 안먹혔었음 -->
         </div>
         <span class="meessage__timeStamp">19:51</span>
       </li>
       <li class="outcoming-message message">
         <span class="meessage__timeStamp">19:55</span>
         <div class="message__content">
-          <div class="message__bubble">
-            Me too!
-          </div>
+          <span class="message__bubble">
+            Me too, Amore mio !
+          </span>
+        </div>
+      </li>
+      <li class="incoming-message message">
+        <img class="m-avatar message__avatar" src="images/avatar.jpg" />
+        <div class="message__content">
+          <span class="message__author">Tina</span>
+          <span class="message__bubble">
+            Where are you?
+          </span>
+          <!--           텍스트는 span에 들어가야한다 div에 들어가서 box-shadow가 안먹혔었음 -->
+        </div>
+        <span class="meessage__timeStamp">19:51</span>
+      </li>
+      <li class="outcoming-message message">
+        <span class="meessage__timeStamp">19:55</span>
+        <div class="message__content">
+          <span class="message__bubble">
+            Going home !
+          </span>
         </div>
       </li>
     </ul>
