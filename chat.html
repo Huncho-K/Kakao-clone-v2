@@ -37,67 +37,70 @@
         </div>
       </header>
     </div>
+    <main class="chat-screen">
+      <ul class="chat__messages">
+        <span class="chat__timeStamp">Friday, January 11, 2019</span>
+        <li class="incoming-message message">
+          <img class="m-avatar message__avatar" src="images/avatar.jpg" />
+          <div class="message__content">
+            <span class="message__author">Tina</span>
+            <span class="message__bubble">
+              I love you !
+            </span>
+            <!--           텍스트는 span에 들어가야한다 div에 들어가서 box-shadow가 안먹혔었음 -->
+          </div>
+          <span class="meessage__timeStamp">19:51</span>
+        </li>
+        <li class="outcoming-message message">
+          <span class="meessage__timeStamp">19:55</span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Me too, Amore mio !
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img class="m-avatar message__avatar" src="images/avatar.jpg" />
+          <div class="message__content">
+            <span class="message__author">Tina</span>
+            <span class="message__bubble">
+              Where are you?
+            </span>
+            <!--           텍스트는 span에 들어가야한다 div에 들어가서 box-shadow가 안먹혔었음 -->
+          </div>
+          <span class="meessage__timeStamp">19:51</span>
+        </li>
+        <li class="outcoming-message message">
+          <span class="meessage__timeStamp">19:55</span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Going home !
+            </span>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="chat__write--container">
+      <input
+        type="text"
+        class="chat__write"
+        placeholder="Send message"
+        class="chart__write-input"
+      />
+      <div class="chat__icon-left chat__icon">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__icon-right chat__icon">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"> </i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScreen__text">인터넷 창 크기를 줄여주세요 !</span>
+    </div>
   </body>
-  <main class="chat-screen">
-    <ul class="chat__messages">
-      <span class="chat__timeStamp">Friday, January 11, 2019</span>
-      <li class="incoming-message message">
-        <img class="m-avatar message__avatar" src="images/avatar.jpg" />
-        <div class="message__content">
-          <span class="message__author">Tina</span>
-          <span class="message__bubble">
-            I love you !
-          </span>
-          <!--           텍스트는 span에 들어가야한다 div에 들어가서 box-shadow가 안먹혔었음 -->
-        </div>
-        <span class="meessage__timeStamp">19:51</span>
-      </li>
-      <li class="outcoming-message message">
-        <span class="meessage__timeStamp">19:55</span>
-        <div class="message__content">
-          <span class="message__bubble">
-            Me too, Amore mio !
-          </span>
-        </div>
-      </li>
-      <li class="incoming-message message">
-        <img class="m-avatar message__avatar" src="images/avatar.jpg" />
-        <div class="message__content">
-          <span class="message__author">Tina</span>
-          <span class="message__bubble">
-            Where are you?
-          </span>
-          <!--           텍스트는 span에 들어가야한다 div에 들어가서 box-shadow가 안먹혔었음 -->
-        </div>
-        <span class="meessage__timeStamp">19:51</span>
-      </li>
-      <li class="outcoming-message message">
-        <span class="meessage__timeStamp">19:55</span>
-        <div class="message__content">
-          <span class="message__bubble">
-            Going home !
-          </span>
-        </div>
-      </li>
-    </ul>
-  </main>
-  <div class="chat__write--container">
-    <input
-      type="text"
-      class="chat__write"
-      placeholder="Send message"
-      class="chart__write-input"
-    />
-    <div class="chat__icon-left chat__icon">
-      <i class="far fa-plus-square"></i>
-    </div>
-    <div class="chat__icon-right chat__icon">
-      <span class="chat__write-icon">
-        <i class="far fa-smile-wink"> </i>
-      </span>
-      <span class="chat__write-icon">
-        <i class="fas fa-microphone"></i>
-      </span>
-    </div>
-  </div>
 </html>
